@@ -1,0 +1,114 @@
+
+body {
+  background-color: #202020;
+}
+
+.topnav {
+  background-color: black;
+}
+
+.topnav a {
+  color: white;
+}
+
+.topnav a:not(.nolink):hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.topnav .search-container button {
+  background: #696969;
+  color: white;
+}
+
+.topnav .search-container button:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+/*provide height of slider*/
+.bx-wrapper, .bx-viewport {
+  border: 5px solid rgb(17, 17, 17) !important; 
+  background: rgb(0, 0, 0) !important;
+  -moz-box-shadow: 0 0 5px rgb(0, 0, 0) !important;
+  -webkit-box-shadow: 0 0 5px rgb(0, 0, 0) !important;
+  box-shadow: 0 0 5px rgb(0, 0, 0) !important;
+}
+
+.sms {
+  background-color: #313131;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+  background-color:rgb(66, 65, 65);
+  color:white;
+  border: lightgrey 1px solid;
+}
+
+blockquote {
+  background: #202020;
+  border-left: 10px solid #ccc;
+}
+
+.dic {
+  background: #202020;
+}
+
+/* rellotge ____________________________________________________________*/
+#rellotge{
+  background-color: #272e38;
+	color:whitesmoke;
+}
+
+#rellotge .pantalla{
+  background-color: black;
+  box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #202020;
+}
+
+/*form*/
+
+#form {
+  color: white;
+}
+
+.icon {
+  background: #202020;
+  color: white;
+}
+
+.input:focus {
+  border: 3px solid white;
+
+}
+
+#form label {
+  background: #202020;
+  margin: 0 0 5px 50px;
+}
+
+/* datapicker _____________________________________________*/
+
+/* joc ___________________________________________________ */
+#joc {
+  color: white;
+}
+
+#joc img {
+background-color: whitesmoke;
+border-radius: 50%;
+}
+
+footer {
+  background-color: black;
+}
+
+footer a, footer p {
+  color: white;
+}
+
+footer a:hover {
+  background-color: whitesmoke;
+  color: black;
+}

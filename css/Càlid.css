@@ -1,0 +1,117 @@
+
+body {
+  background-color:rgb(255, 248, 190);
+}
+
+.topnav {
+  background-color: #faf47c;
+}
+
+.topnav a {
+  color: black;
+}
+
+.topnav a:not(.nolink):hover {
+  background-color: gold;
+  color: black;
+}
+
+.topnav .search-container button {
+  background-color: #faf254;
+  color: black;
+}
+
+.topnav .search-container button:hover {
+  background-color: gold;
+}
+
+/*provide height of slider*/
+.bx-wrapper, .bx-viewport {
+  border: 5px solid #faf4a2 !important; 
+  background: #faf4a2 !important;
+  -moz-box-shadow: 0 0 5px #faf4a2 !important;
+  -webkit-box-shadow: 0 0 5px #faf4a2 !important;
+  box-shadow: 0 0 5px #faf4a2 !important;
+}
+
+.sms {
+  background-color: ivory;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+  background-color: #fcf9d4;
+  color:black;
+  border: black 1px solid;
+}
+
+blockquote {
+  background: ivory;
+  border-left: 10px solid rgb(255, 157, 0);
+}
+
+blockquote::before {
+  color: rgb(255, 157, 0);
+
+}
+
+blockquote::after {
+  color: rgb(255, 157, 0);
+}
+
+.dic {
+  background-color: ivory;
+}
+
+/* rellotge ____________________________________________________________*/
+#rellotge{
+  background-color: gold;
+	color:black;
+}
+
+#rellotge .pantalla{
+  background-color:rgb(250, 241, 162);
+  box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px rgb(248, 237, 141);
+}
+
+/*form*/
+
+#form {
+  color: black;
+  background-color:rgb(255, 248, 190);
+}
+
+.icon {
+  background: rgb(255, 248, 190);
+  color: black;
+}
+
+.input:focus {
+  border: 3px solid black;
+}
+
+#form label {
+  background: rgb(255, 248, 190);
+}
+
+/* datapicker _____________________________________________*/
+
+/* joc ___________________________________________________ */
+#joc img {
+background-color: white;
+border-radius: 50%;
+}
+
+footer {
+  background-color: #faf47c;
+}
+
+footer a, footer p {
+  color: black;
+}
+
+footer a:hover {
+  background-color: gold;
+  color: black;
+}

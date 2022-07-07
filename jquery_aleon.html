@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="ca"> <!-- meta idioma -->
+
+<head>
+<meta charset="utf-8"><!--meta joc de caràcters -->
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- etiqueta per HTML responsive -->
+<meta name="description" content="">
+<meta name="author" content="Aleix Leon">
+
+<title>Projecte aleon - JQuery i Javascript Assíncron</title><!-- títol de la web -->
+
+<!-- js, jquery en head abans estils -->
+<script src="js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="js/jquery_aleon.js" charset="utf-8"></script>
+
+<!--jquery ui -->
+<script src="js/jquery-ui-1.13.0/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="js/jquery-ui-1.13.0/jquery-ui.css">
+
+<!-- CSS interns --><style></style>
+<!-- estils base -->
+<link rel="stylesheet" type="text/css" href="css/Clar.css" >
+<!-- estils tema -->
+<link id ='tema' rel="stylesheet" type="text/css" href="css/Clar.css" >
+<!--
+  href="css/clar.css"
+  href="css/fosc.css"
+  href="css/calid.css"
+  href="css/fred.css"
+-->
+
+<!--icones-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/af74c6d29b.js" crossorigin="anonymous"></script>
+
+<!--slider
+Links to the libraries needed -->
+<link rel="stylesheet" href="js/bxslider-4-4.2.12/src/css/jquery.bxslider.css">
+<script src="js/bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+
+<!--moment-->
+<script src="js/moment-with-locales.js"></script>
+
+</head>
+<body>
+
+  <!-- contenidor ________________________________________________________________-->
+  <div class='contenidor'>
+
+      <!-- menú ______________________________________________________________________-->
+      <div class="topnav">
+          <a class="nolink">Chuck Norris diu</a>
+          <div class="search-container">
+              <form>
+                <select id="cat_select" >
+                  <!--<option value="cat1">cat 1</option>-->
+                </select>
+                <button id="cerca_chuck" type="button"><i class="fa fa-search"></i></button>
+              </form>
+          </div>
+          <a id= 'link_clock'>Rellotge</a>
+          <a id= 'link_form'>Registre</a>
+          <a id= 'link_joc'>Juguem!</a>
+            <div class = "estils">
+              <a>Clar</a>
+              <a>Fosc</a>
+              <a>Càlid</a>
+              <a>Fred</a>
+              <a class ="avall">Cap avall &#8595;</a>
+            </div>         
+      </div>
+
+        <!-- // Slider HTML (change this to your own!) ____________________________________-->      
+        <div class="slider">
+          <div><img src="js/bxslider-4-4.2.12/docs_src/assets/img/photo1.jpeg"></div>
+          <div><img src="js/bxslider-4-4.2.12/docs_src/assets/img/photo2.jpeg"></div>
+          <div><img src="js/bxslider-4-4.2.12/docs_src/assets/img/photo3.jpeg"></div>
+          <div><img src="img/montserrat.jpg" "></div>
+
+        </div>
+
+        <!-- div principal___________________________________________________________________-->
+    <div class='main'>
+
+        <!-- div post fila chuck______________________________________________________-->
+        <div id='chuck' class='row'>
+            
+          <!-- <div id="card1" class="card"> -->
+              <!-- sortida html frase chuck-->
+              
+              <!-- <div class="mes_info"> -->
+                <!-- sortida html paraula diccionari-->
+
+                <!--
+                <div class="fakeimg">
+                  <img src="https://tse3.explicit.bing.net/th?id=OIP.93nGQwkqkFLc0aOHQBE7dgHaKY&amp">
+                </div>
+                -->
+
+          <!-- fi chuck _____________________________________________________-->
+        </div>
+
+        <!-- div rellotge___________________________________________________-->
+        <div id='clock' class='row'>
+          
+          <div id="rellotge" class="rellotge">
+            <div class="pantalla">
+              <div class="weekdays">
+                <span id="DL">DL</span>
+                <span id="DM">DM</span>
+                <span id="DX">DX</span>
+                <span id="DJ">DJ</span>
+                <span id="DV">DV</span>
+                <span id="DS">DS</span>
+                <span id="DG">DG</span>
+              </div>
+              <div class="hora"></div>
+              <div class="ampm"></div>
+              <div class="data"></div>
+            </div>
+        </div>
+
+          <!-- fi rellotge _____________________________________________________-->
+        </div>
+
+        <!-- div registre___________________________________________________-->
+        <div id='form' class='row'>
+          
+          <form>
+            <h1>* Registra't *</h1>
+
+            <div class="input-container">
+              <i class="fas fa-user fa-lg icon"></i>
+              <input id="fnom" class="input vnom" type="text" placeholder="nom" >
+            </div>
+            <div class="input-container">
+              <label for='fnom'></label>
+            </div>
+
+            <div class="input-container">
+              <i class="fas fa-user fa-lg icon"></i>
+              <input id="fcognoms" class="input vnom" type="text" placeholder="cognoms">
+            </div>
+            <div class="input-container">
+              <label for='fcognoms'></label>
+            </div>
+          
+            <div class="input-container">
+              <i class="fas fa-envelope fa-lg icon"></i>
+              <input id="fmail" class="input" type="email" placeholder="email">
+            </div>
+            <div class="input-container">
+              <label for='fmail'></label>
+            </div>
+
+            <div class="input-container">
+              <i class="fas fa-grimace fa-lg icon"></i>
+                <select id="fgen" class="input">
+                  <option value="sel">* gènere *</option>
+                  <option value="home">home</option>
+                  <option value="dona">dona</option>
+                </select>
+            </div>
+            <div class="input-container">
+              <label for='fgen'></label>
+            </div>
+            
+            <div class="input-container">
+              <i class="fas fa-birthday-cake fa-lg icon"></i>
+              <input id="fdata" class="input" type="text" placeholder="data naixement [dd/mm/aa]">
+            </div>
+            <div class="input-container">
+              <label for='fdata'></label>
+            </div>
+
+            <div class="input-container">
+              <i class="fas fa-sad-cry fa-lg icon"></i>
+              <input id="fedat" class="input" type="number" placeholder="edat" disabled >
+            </div>
+            <div class="input-container error">
+              <label for='fedat'></label>
+            </div>
+          
+            <button id ='buto_form' class="btn btn_disabled" type ="button" disabled>Go !</button>
+ 
+          </form>
+
+          <div class = 'fake_person'>
+            <!--<h2 class = 'fake_resposta'>* FATAL ERROR *</h2>-->
+              <div class = 'fake_dades'>
+                <ul></ul>
+           </div>
+
+          </div>
+
+          <!-- fi registre _____________________________________________________-->
+        </div>
+
+        <!-- div joc__________________________________________________________ -->
+        <div id='joc' class='row'>
+
+          <h1>* el joc de la api! *</h1>
+          <img src ='img/API.png'>
+          
+          <div class="form_joc">
+            <form>
+              <select id="select_joc" >
+                <!--<option value="22">Geografia</option>>-->
+              </select>
+              <button id="go_joc" type="button"><i class="fa fa-carrot"></i> GO!</button>
+            </form>
+          </div>
+
+          <!--taulell ______________________________________________________________-->
+          <div class= 'taulell'>
+
+            <div class = "joc_comptador">* PREGUNTA 1 / 10 *</div>
+            <div class = "joc_sms">* MISSATGES *</div>
+            <div class="controls_joc">
+              <button id="next_joc" class ='buto_joc' type="button"><i class="fa fa-arrow-right"></i> NEXT!</button>
+              <a href =""><button id="again_joc" class ='buto_joc' type="button"><i class="fa fa-redo-alt"></i> AGAIN!</button></a>
+            </div>
+            <div id='result_emoji'></div>
+            <div id='result_frase'></div>
+
+            <!--card ____________________________________________________________-->
+          <!--
+            <div id ='card1' class ='card_joc card_activa'>
+              <a class='pregunta'>            
+                results[0].question / What is the capital of the American state of Arizona?
+              </a>
+              <a class='resposta correct_answer'>
+                results[0].correct_answer / Phoenix
+              </a>
+              <a class='resposta'>
+                results[0].incorrect_answers[0] / Montgomery
+              </a>
+              <a class='resposta'>
+                results[0].incorrect_answers[1] / Tallahassee
+              </a>
+              <a class='resposta'>
+                results[0].incorrect_answers[2] / Raleigh
+              </a>
+            </div>
+          -->
+
+          <!--fi taulell _____________________________________________________-->
+        </div>
+
+      </div>
+
+
+          
+          <!-- fi joc _________________________________________________________-->
+        </div>
+
+        <div class='sms'>
+          <h4>* SYSTEM LOG *</h4>
+          <p>----------------</p>
+        </div>
+
+      <!-- fi principal ___________________________________________________________________-->
+    </div>
+
+    <footer>
+    <p>© Aleix Leon 2021-22</p>
+    <a class ="amunt">Cap amunt &#8593;</a>
+    </footer>
+
+  <!-- fi contenidor ___________________________________________________________________-->
+  </div>
+
+</body>
+</html>

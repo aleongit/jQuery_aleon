@@ -1,0 +1,125 @@
+body {
+  background-color:#e0effd;
+}
+
+.topnav {
+  background-color: #65b1f8;
+}
+
+.topnav a {
+  color: black;
+}
+
+.topnav a:not(.nolink):hover {
+  background-color: #2d94f5;
+  color: black;
+}
+
+.topnav .search-container button {
+  background-color: #65b1f8;
+  color: black;
+}
+
+.topnav .search-container button:hover {
+  background-color: #2d94f5;
+}
+
+/*provide height of slider*/
+.bx-wrapper, .bx-viewport {
+  border: 5px solid #cfe6fc !important; 
+  background: #cfe6fc !important;
+  -moz-box-shadow: 0 0 5px #cfe6fc !important;
+  -webkit-box-shadow: 0 0 5px #cfe6fc !important;
+  box-shadow: 0 0 5px #cfe6fc !important;
+}
+
+.sms {
+  background-color: #eff6fd;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card {
+  background-color: #cde6fd;
+  color:black;
+  border: black 1px solid;
+}
+
+blockquote {
+  background: rgb(239, 248, 253);
+  border-left: 10px solid rgb(56, 83, 204);
+}
+
+blockquote::before {
+  color: rgb(56, 83, 204);
+
+}
+
+blockquote::after {
+  color: rgb(56, 83, 204);
+}
+
+.dic {
+  background-color: #cde6fd;
+}
+
+/*form*/
+
+#form {
+  color: black;
+  background-color:#e0effd;
+}
+
+.icon {
+  background: #e0effd;
+  color: black;
+}
+
+.input:focus {
+  border: 3px solid black;
+}
+
+#form label {
+  background: #e0effd;
+}
+
+.input_ok {
+  border: 3px solid green;
+  padding: 0;
+}
+
+.ok {
+  color: green;
+}
+
+/* datapicker _____________________________________________*/
+
+/* rellotge ____________________________________________________________*/
+#rellotge{
+  background-color: #65b1f8;
+	color:black;
+}
+
+#rellotge .pantalla{
+  background-color:#bfe0ff;
+  box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #9ccbf7;
+}
+
+/* joc ___________________________________________________ */
+#joc img {
+  background-color: white;
+  border-radius: 50%;
+  }
+
+footer {
+  background-color: #65b1f8;
+}
+
+footer a, footer p {
+  color: black;
+}
+
+footer a:hover {
+  background-color: #2d94f5;
+  color: black;
+}

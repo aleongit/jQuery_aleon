@@ -1,0 +1,657 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+
+}
+
+body {
+  font-family: Helvetica ,Arial, sans-serif;
+}
+
+.contenidor {
+  width: 90%;
+  margin: auto;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: whitesmoke;
+  margin: 10px 0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:not(.nolink):hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.topnav .search-container {
+  float: left;
+}
+
+.topnav .estils {
+  float: right;
+}
+
+.topnav .avall {
+  float: right;
+}
+
+.topnav input[type=text], .topnav select {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  color: black;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container, .topnav .estils {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav select, .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/*provide height of slider*/
+.bx-wrapper, .bx-viewport {
+  height: 400px !important; 
+}
+
+.sms {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  margin: 3em 0;
+  padding: 5px;
+  background-color: whitesmoke;
+  color:black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+   border: lightgrey 1px solid;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.img_chuck {
+  width: 250px;
+}
+
+.data_post {
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+blockquote {
+  font-family: monospace;
+  font-size: 1.5em;
+  text-align: justify;
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: .5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019"
+}
+
+blockquote::before {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: .1em;
+  margin-right: .25em;
+  vertical-align: -.4em
+}
+
+blockquote::after {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: .1em;
+  margin-left: .25em;
+  vertical-align: -.4em
+}
+
+blockquote p {
+  display: inline
+}
+
+#chuck button {
+  background-color: #555555;
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+#chuck button:hover {
+  background-color: #353535;
+  color: white;
+}
+
+.dic {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 25px 0;
+}
+
+.dic table {
+  border-spacing: 10px;
+}
+
+.dic table td:nth-child(odd) {
+  font-weight: bold;
+}
+
+
+/* Fake image */
+.fakeimg {
+  width: 100%;
+  margin-top: 25px;
+  /*padding: 20px;*/
+  
+}
+
+.fakeimg img {
+  width: 400px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* rellotge ____________________________________________________________*/
+#rellotge{
+	width:100%;
+	margin:15px auto;
+	position:relative;
+  background-color: whitesmoke;
+	color:#272e38;
+  border-radius:6px;
+
+}
+
+#rellotge .pantalla{
+  margin:0 auto;
+  background-color:whitesmoke;
+  font-family: monospace;
+	box-shadow:0 1px 1px rgba(0,0,0,0.08) inset, 0 1px 1px #fafafa;
+	text-align:center;
+	padding: 30px 20px;
+	border-radius:6px;
+	position:relative;
+  font-size: 54px;
+}
+
+#rellotge .pantalla .hora {
+  font-size: 154px;
+}
+
+
+#rellotge .weekdays{
+	font-size:54px;
+	position:absolute;
+	width:100%;
+	top:0;
+	left:0;
+	text-align:center;
+}
+
+#rellotge .weekdays span{
+	opacity:0.2;
+	padding:0 10px;
+}
+
+#rellotge .weekdays span.actiu{
+	opacity:1;
+}
+
+#rellotge .ampm {
+	position:absolute;
+	top:54px;
+	right:18px;
+	font-size:54px;
+}
+
+#rellotge .data {
+	font-size:50px;
+	position:absolute;
+	width:100%;
+	bottom: 0;
+	left:0;
+	text-align:center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+#rellotge .data span{
+	opacity:0.5;
+	padding:2px 2px;
+}
+
+@media screen and (max-width: 1160px) {
+  #rellotge .pantalla .hora {
+      font-size: 50px;
+    }
+  #rellotge .weekdays{
+    font-size:18px;
+    }
+  #rellotge .ampm{
+    font-size:20px;
+  }
+  
+  #rellotge .data{
+    font-size:18px;
+  }
+  
+  }
+
+/* form ______________________________________________________*/
+#form {
+  font-family: 'Courier New', Courier, monospace;
+  max-width:600px;
+  margin:auto;
+  padding: 0 20px;
+}
+
+#form h1 {
+  margin: 1em 0;
+  text-align: center;
+}
+
+#form input, #form select, #form label {
+  padding:5px;
+  font-size:1.5em;
+  font-family:monospace;   
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+}
+
+.icon {
+  padding: 10px;
+  background: white;
+  color: black;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+}
+
+.input:focus {
+  border: 3px solid black;
+  padding: 0;
+}
+
+.input_error {
+  border: 3px solid tomato;
+  padding: 0;
+}
+
+.input_ok {
+  border: 3px solid lightgreen;
+  padding: 0;
+}
+
+#form label {
+  background: white;
+  margin: 0 0 5px 50px;
+
+}
+
+.error {
+  color: tomato;
+}
+
+.ok {
+  color: lightgreen;
+}
+
+.fake_person {
+  margin: 1em auto;
+}
+
+.fake_dades {
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.fake_person ul {
+  list-style-type: none;
+  font-size: 1.2em;
+  margin: 0 0 0 5px;
+}
+
+.fake_person img {
+  width: 30%;
+}
+
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #ddd;
+  color: #aaa;
+  font-size: 1.5em;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.8;
+}
+
+.btn_ok {
+  background-color: #49d870;
+  border-color: #49d870;
+  color: #fff;
+  border-radius: 500px;
+}
+
+.btn_ok:hover {
+  opacity:1;
+}
+
+#form label {
+  display: block;
+}
+
+/* datapicker _____________________________________________*/
+#ui-datepicker-div{
+	font-family: monospace;
+  font-size: 1.5em;
+	background: white;
+	border: 1px solid #e4e4e4;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+  padding: 10px;
+}
+
+.ui-datepicker .ui-datepicker-header {
+	border: none;
+	background-color: #555555;
+  color:white;
+	font-weight: normal;
+  border-radius: 0;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: 1px solid white;
+  /*background: white;*/
+  font-weight: normal;
+  color: #454545;
+}
+
+.ui-state-default:hover {
+  background: #454545;
+  color: white;
+}
+
+.ui-datepicker td span, .ui-datepicker td a {
+  display: block;
+  padding: 0.2em;
+  text-align: right;
+  text-decoration: none;
+}
+/*
+td:nth-child(odd) {
+  font-weight: bold;
+  background-color: white;
+}
+*/
+.ui-datepicker-prev, .ui-datepicker-next {
+  border: none;
+}
+
+.ui-datepicker-prev:hover, .ui-datepicker-next:hover {
+  background: #454545;
+  border: none;
+  margin: 1px;
+}
+
+.ui-datepicker-prev span, .ui-datepicker-next span {
+  background-color: whitesmoke;
+}
+
+/*posició icones dins imatge*/
+.ui-icon-circle-triangle-w {
+  background-position: -96px -16px;
+}
+
+.ui-icon-circle-triangle-e {
+  background-position: -32px -16px;
+}
+
+.ui-corner-all:hover {
+  border: none;
+}
+
+/* current day */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight {
+  background-color: #ddd;
+  border: none;
+}
+
+.ui-state-highlight:hover {
+  border: none;
+  color:black;
+  /*margin: 1px 1px 1px 0.5px;*/
+
+}
+
+/* dia seleccionat*/
+.ui-state-active, .ui-widget-content .ui-state-active {
+  border: none;
+  background: #f8da79;
+}
+
+.ui-state-active:hover {
+    border: none;
+    color:black;
+}
+
+/* joc ___________________________________________________ */
+#joc {
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 800px;
+  margin: 1em auto;
+  padding: 0 20px 50px;
+  text-align: center;
+}
+
+#joc img {
+  width: 30%;
+}
+
+.form_joc {
+  /*background-color: #49d870;*/
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 15px 0 25px;
+}
+
+.form_joc select {
+  padding: 6px 15px;
+  font-size: 20px;
+  border: 1px solid #ddd;
+}
+
+.form_joc button {
+  padding: 6px 20px;
+  margin: 8px 16px;
+  background: #454545;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.joc_comptador {
+  font-size: 30px;
+  padding: 5px 0 5px ;
+}
+
+.joc_sms {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 5px 0 ;
+}
+
+.controls_joc {
+  height: 45px;
+  text-align: right;
+}
+
+.buto_joc {
+  padding: 10px 10px ;
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background: gold;
+}
+
+#result_emoji {
+  font-size: 10em;
+}
+
+#result_frase {
+  font-size: 5em;
+}
+
+.card_joc {
+  margin: 0 0 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card_joc a {
+  background-color: white;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.card_joc a:hover {
+  background-color: whitesmoke;
+  cursor: pointer;
+}
+
+.card_joc a.pregunta {
+  font-size: 25px ;
+  font-weight: bold;
+  background-color: #454545;
+  color: white;
+}
+
+.card_joc .resposta {
+  background-color: white;
+  font-size: 20px ;
+  padding: 25px;
+}
+
+.card_joc .res_ok {
+  background-color: rgb(120, 233, 120);
+  pointer-events: none;
+}
+
+.card_joc .res_ko {
+  background-color: rgb(255, 209, 209);
+  pointer-events: none;
+}
+
+.bloqued {
+pointer-events: none;
+}
+
+
+/* Footer */
+footer {
+  text-align: left;
+  overflow: hidden;
+  background-color: whitesmoke;
+  margin: 10px 0;
+}
+
+footer a, footer p {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+footer a {
+  float: right;
+}
+
+footer p {
+  float:left;
+}
+
+footer a:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
